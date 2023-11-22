@@ -1,0 +1,10 @@
+{% include 'header.html' %}
+{% macro list_users(u)%}
+<ul>
+{% for i in u %}
+    <li>{{i}}
+{% endfor %}
+</ul>
+{% endmacro %}
+{{list_users(users)}}
+{% include 'footer.html' %}
